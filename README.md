@@ -1,3 +1,4 @@
+Deployed link : https://shashankp10.github.io/coupon-generator/
 Key Components:
   1. HTML Form: Collects user input for the organization name, discount, deal description, and expiry date.
   2. Coupon Preview: Displays a live preview of the coupon based on user input.
