@@ -96,7 +96,7 @@ button:hover {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    background: linear-gradient(to right, rgb(142 218 229), rgb(91 82 185));
     box-sizing: border-box;
     word-wrap: break-word;
     visibility: hidden;
@@ -116,8 +116,11 @@ button:hover {
 }
 
 .coupon-desc {
+    display: flex;
     font-size: 1.2em;
     width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .coupon-discount {
