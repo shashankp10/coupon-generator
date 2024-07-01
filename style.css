@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-and-preview {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#downloadBtn {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e74c3c;
+}
+
+#couponPreview {
+    flex: 1;
+    text-align: left;
+    min-width: 50%;
+    box-sizing: border-box;
+}
+@media(max-width : 300px){
+    #couponPreview{
+        min-width: 100%;
+    }
+}
+
+.coupon {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    box-sizing: border-box;
+    word-wrap: break-word;
+    visibility: hidden;
+}
+
+.coupon-header {
+    font-family: Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coupon-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coupon-desc {
+    font-size: 1.2em;
+    width: 50%;
+}
+
+.coupon-discount {
+    font-size: 2.9em;
+    font-weight: bold;
+    text-align: right;
+    width: 50%;
+}
+
+.coupon-footer {
+    font-size: 1.2em;
+    text-align: right;
+    margin-top: 20px;
+}
+
+

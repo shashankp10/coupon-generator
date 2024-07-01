@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Coupon Generator</h1>
+    <div class="container">
+        <div class="form-and-preview">
+            <form id="couponForm">
+                <div>
+                    <label for="orgName">Organization Name:</label>
+                    <input type="text" id="orgName" name="orgName" required>
+                </div>
+                <div>
+                    <label for="discount">Discount:</label>
+                    <input type="text" id="discount" name="discount" required>
+                </div>
+                <div>
+                    <label for="dealDesc">Deal Description:</label>
+                    <input type="text" id="dealDesc" name="dealDesc" required>
+                </div>
+                <div>
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="date" id="expiryDate" name="expiryDate" required>
+                </div>
+                <button type="button" onclick="generateCoupon()">Generate Coupon</button>
+            </form>
+            <div id="couponPreview">
+                <h2>Coupon Preview:</h2>
+                <div class="coupon" id="coupon">
+                    <div class="coupon-header" id="couponOrgName"></div>
+                    <div class="coupon-body">
+                        <div class="coupon-desc" id="couponDesc"></div>
+                        <div class="coupon-discount" id="couponDiscount"></div>
+                    </div>
+                    <div class="coupon-footer" id="couponExpiry"></div>
+                </div>
+                <button id="downloadBtn" onclick="downloadCoupon()" style="display:none;">Download Coupon</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
